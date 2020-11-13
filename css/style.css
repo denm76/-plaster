@@ -89,24 +89,45 @@ section {
   font-size: 2.2rem;
   text-transform: uppercase;
 }
-.header-bottom2 .top {
-  font-family: 'ProximaNovaRegular', serif;
-  font-size: 1.8rem;
-  font-weight: 400;
-  font-style: normal;
-  padding: 0;
-}
 .header-bottom2 p {
   font-family: 'ProximaNovaRegular', serif;
   font-size: 1.2rem;
   font-weight: 400;
   font-style: normal;
 }
-.form {
+.header-bottom2 label {
+  position: absolute;
+  left: 50%;
+  display: block;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-color: #ffffff;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+.header-bottom2 form {
   width: 353px;
   height: 405px;
-  background: #fff;
+  background: #ffffff;
   text-align: center;
+}
+.header-bottom2 form .pusto {
+  height: 40px;
+  width: 100%;
+}
+.header-bottom2 form .top {
+  margin-bottom: 40px;
+  font-family: 'ProximaNovaRegular', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.3;
+}
+.header-bottom2 button,
+.header-bottom2 input {
+  width: 25.3rem;
+  height: 5.4rem;
+  margin-bottom: 2.5rem;
 }
 .green {
   width: 22rem;
@@ -125,17 +146,11 @@ section {
 .green .in {
   padding: 29px 39px 24px 39px;
 }
-.form button,
-.form input {
-  width: 25.3rem;
-  height: 5.4rem;
-  margin-bottom: 2.5rem;
-}
 .header-right {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 .header-right p {
-  font-family: 'ProximaNova Regular', serif;
+  font-family: 'ProximaNovaRegular', serif;
   font-size: 1.2rem;
 }
