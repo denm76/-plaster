@@ -151,10 +151,36 @@ a:hover {
   text-align: right;
 }
 @media (max-width: 991px) {
+  .main {
+    background-position: top right;
+  }
+  .main-trigger {
+    margin-bottom: 20px;
+  }
   .phone-block {
     text-align: center;
   }
-  .header-bottom2 {
+  .main-content {
+    margin-top: 3rem;
+  }
+  .main-title {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .main {
+    background-position: top left;
+  }
+  .main-trigger {
+    margin-bottom: 20px;
+  }
+  .logo {
+    text-align: center;
+  }
+  .phone-block {
+    text-align: center;
+  }
+  .wrap-block {
     text-align: center;
   }
 }
