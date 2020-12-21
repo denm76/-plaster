@@ -392,6 +392,63 @@ a:hover {
   font-family: 'ProximaNovaBold', sans-serif;
   font-size: 1.9rem;
 }
+/* Мы развеим ваши сомнения */
+.problems {
+  position: relative;
+}
+.problems-woman {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -19rem;
+  width: 30rem;
+}
+.problems-list {
+  border: 4px solid;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  min-height: 35rem;
+}
+.problems-list ul {
+  padding-left: 0;
+  padding-top: 2rem;
+  list-style: none;
+}
+.problems-list ul li {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 3.5rem;
+}
+.problems-list ul li:before {
+  content: '';
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.problems-list h4 {
+  font-family: 'ProximaNovaBold', sans-serif;
+  font-size: 2.1rem;
+}
+.problems-list_bad {
+  border-color: #e8e8e8;
+}
+.problems-list_bad h4 {
+  opacity: 0.5;
+}
+.problems-list_bad ul li:before {
+  background: url(../img/problems/cansel.png) center no-repeat;
+  background-size: 50%;
+}
+.problems-list_good {
+  border-color: #358015;
+}
+.problems-list_good ul li:before {
+  background: url(../img/problems/checked.png) center no-repeat;
+}
 /* Оформление модальных окон */
 .popup {
   display: none;
@@ -442,6 +499,9 @@ a:hover {
   .all-inclusive .media {
     min-height: 11rem;
   }
+  .problems-list {
+    min-height: 40rem;
+  }
 }
 @media (max-width: 991px) {
   .main {
@@ -469,6 +529,12 @@ a:hover {
   .feedback-form label {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+  }
+  .problems-list {
+    min-height: auto;
+  }
+  .problems-woman {
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -510,12 +576,24 @@ a:hover {
   .scheme-block {
     min-height: 20rem;
   }
+  .problems-list {
+    min-height: auto;
+  }
+  .problems-woman {
+    display: none;
+  }
 }
 @media (max-width: 340px) {
   .main h1 {
     font-size: 2rem;
   }
   .hand {
+    display: none;
+  }
+  .problems-list {
+    min-height: auto;
+  }
+  .problems-woman {
     display: none;
   }
 }
