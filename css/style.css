@@ -449,6 +449,28 @@ a:hover {
 .problems-list_good ul li:before {
   background: url(../img/problems/checked.png) center no-repeat;
 }
+/* Материалы */
+.materials {
+  background: #ffffff url(../img/materials/materials-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.materials-offer {
+  margin-top: 8rem;
+}
+.materials-slider {
+  padding-top: 5rem;
+}
+.materials-link {
+  color: #48be15;
+  border-bottom: 1px dashed #48be15;
+}
+.materials-link:hover {
+  color: #379010;
+}
+.materials img {
+  display: block;
+  margin: 0 auto;
+}
 /* Оформление модальных окон */
 .popup {
   display: none;
@@ -582,8 +604,12 @@ a:hover {
   .problems-woman {
     display: none;
   }
+  .materials-block {
+    display: block;
+    border-bottom: none;
+  }
 }
-@media (max-width: 340px) {
+@media (max-width: 320px) {
   .main h1 {
     font-size: 2rem;
   }
@@ -595,5 +621,9 @@ a:hover {
   }
   .problems-woman {
     display: none;
+  }
+  .materials-block {
+    display: block;
+    border-bottom: none;
   }
 }
