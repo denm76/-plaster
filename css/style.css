@@ -23,7 +23,8 @@ html {
 .form {
   /* Подписи к полям */
 }
-.form-input {
+.form-input,
+.form-textarea {
   display: block;
   margin: 2rem 0;
   width: 100%;
@@ -471,6 +472,76 @@ a:hover {
   display: block;
   margin: 0 auto;
 }
+/*Посмотрите, как мы работаем*/
+.tour {
+  background: #ffffff url(../img/tour.jpg) center no-repeat;
+  background-size: cover;
+}
+.tour-subtitle {
+  font-size: 2.2rem;
+}
+/* Дополнительные услуги */
+.upsell {
+  background: #286b0a;
+}
+.upsell-block {
+  min-height: 15rem;
+  text-align: center;
+  color: #ffffff;
+}
+.upsell-block button {
+  margin-bottom: 5rem;
+}
+.upsell-block img {
+  display: inline-block;
+  margin-bottom: 3rem;
+  width: 100%;
+  max-width: 30rem;
+}
+.upsell-block p {
+  font-size: 2rem;
+}
+/* Контакты */
+.contacts {
+  background: #ffffff url(../img/contacts/contacts-bg.jpg) center right 36% no-repeat;
+  background-size: cover;
+}
+.contacts-form-header {
+  font-size: 1.9rem;
+}
+.contacts h2 {
+  font-family: 'ProximaNovaBold', sans-serif;
+}
+.contacts p {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.contacts-link {
+  display: inline-block;
+  border-bottom: 1px dotted #1a1820;
+  color: #1a1820;
+}
+.contacts-link:hover {
+  color: #020203;
+}
+.contacts-form h2 {
+  font-size: 1.9rem;
+  font-family: 'ProximaNovaRegular', sans-serif;
+}
+/* Footer */
+footer {
+  padding: 4rem 0;
+}
+.footer-contacts {
+  text-align: center;
+  padding: 0.5rem;
+}
+.footer-contacts p {
+  margin: 0;
+}
+.footer-dev-logo {
+  text-align: right;
+}
 /* Оформление модальных окон */
 .popup {
   display: none;
@@ -524,6 +595,9 @@ a:hover {
   .problems-list {
     min-height: 40rem;
   }
+  .tour {
+    background: none;
+  }
 }
 @media (max-width: 991px) {
   .main {
@@ -557,6 +631,22 @@ a:hover {
   }
   .problems-woman {
     display: none;
+  }
+  .tour {
+    background: none;
+  }
+  .contacts {
+    background-color: #f5f5f5;
+    background: none;
+  }
+  footer {
+    text-align: center;
+  }
+  .footer-contacts {
+    margin: 2rem 0;
+  }
+  .footer-dev-logo {
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
@@ -608,6 +698,9 @@ a:hover {
     display: block;
     border-bottom: none;
   }
+  .tour {
+    background: none;
+  }
 }
 @media (max-width: 320px) {
   .main h1 {
@@ -625,5 +718,8 @@ a:hover {
   .materials-block {
     display: block;
     border-bottom: none;
+  }
+  .tour {
+    background: none;
   }
 }
